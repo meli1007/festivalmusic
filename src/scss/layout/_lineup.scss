@@ -1,0 +1,60 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+
+.lineup {
+    background-color: v.$red;
+    h3, 
+    .day {
+        text-align: center;
+        color: v.$white;
+    }
+    .day {
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+.stage-container {
+    @include m.container;
+    @include m.tablet {
+        @include m.grid(2);
+    }
+}
+.stage {
+    padding-top: 2rem;
+    .name-stage {
+        font-size: 3rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+    }
+}
+
+.calendar {
+    @include m.reset-list;
+
+    li {
+        padding: 2.5rem;
+        font-weight: 700;
+        span {
+            font-weight: 400;
+        }
+    }
+}
+
+.bg-yellow {
+    background-color: v.$yellow;
+    //odd -> impar, even -> par
+    li:nth-child(odd) {
+        background-color: color.adjust(v.$yellow, $lightness: 5%);
+    }
+}
+
+.bg-green {
+    background-color: v.$green;
+    li:nth-child(odd) {
+        background-color: color.adjust(v.$green, $lightness: 5%);
+    }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "festivalmusic",
+  "version": "1.0.0",
+  "description": "SASS and NPM",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "dev": "gulp"
+  },
+  "keywords": [
+    "SASS",
+    "NPM",
+    "Gulp"
+  ],
+  "author": "Melina P",
+  "license": "ISC",
+  "devDependencies": {
+    "glob": "^11.0.2",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^6.0.1",
+    "gulp-terser": "^2.1.0",
+    "sass": "^1.88.0",
+    "sharp": "^0.34.1"
+  }
+}

@@ -1,0 +1,79 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:color';
+
+.container-tickets {
+    background-color: v.$green;
+    h3 {
+        color: v.$light-black;
+    }
+
+    .tickets {
+        @include m.tablet {
+            @include m.container;
+            @include m.grid(2);
+        }
+       
+    }
+}
+.ticket {
+    transition: transform .3s ease-in-out;
+    &:hover {
+        //10% -> 1.1
+        transform: scale(1.1);
+    }
+    &-name {
+            font-size: 3rem;
+            font-weight: 900;
+            text-align: center;
+            color: v.$light-black;
+        }
+    &-header, 
+    &-footer {
+        padding: .5rem;
+        p {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: v.$white;
+            margin: 0;
+            text-align: center;
+        }
+        
+    }
+    &-header {
+        background-color: v.$red;
+        p {
+            text-transform: uppercase;
+            font-size: 2.2rem;
+            padding: 1rem 0;
+        }
+    }
+    &-body {
+        background-color: v.$white;
+        ul {
+            @include m.reset-list;
+            
+            li {
+                padding: 2rem;
+                border-bottom: 1px solid #e1e1e1;
+            }
+        }
+    }
+    &-footer {
+        background-color: v.$white;
+        padding: 3rem;
+
+        p {
+            font-size: 2.8rem;
+            font-weight: 900;
+            background-color: v.$purple;
+            padding: 1rem 0;
+            border-radius: 1rem;
+            cursor: pointer;
+            &:hover {
+                background-color: color.adjust(v.$purple, $lightness: -20%);
+            }
+        }
+        
+    }
+}

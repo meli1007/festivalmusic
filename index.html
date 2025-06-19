@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container content-header">
+            <h1>Techo & EDM Festival</h1>
+            <nav class="principal-navigation">
+                <a href="#lineup">Lineup</a>
+                <a href="#gallery">Galerie</a>
+                <a href="#tickets">Tickets</a>
+            </nav>
+        </div>
+    </header>
+    <div class="video">
+        <div class="overlay">
+            <div class="container container-video">
+                <h2>Techno & EDM Festival</h2>
+                <p>Juli 2026, Düsseldorf</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/dj.mp4" type="video/mp4" />
+            <source src="video/dj.ogv" type="video/ogg" />
+            <source src="video/dj.webm" type="video/webm" />  
+    </div>
+
+    <section class="about-festival">
+        <div class="image">
+            <picture>
+                <source srcset="build/img/imagen_dj.avif" type="image/avif" />
+                <source srcset="build/img/imagen_dj.webp" type="image/webp" />
+                <img width="300" height="200" loading="lazy" src="build/img/imagen_dj.jpg" alt="about festival" />
+            </picture>
+        </div>
+        <div class="content-festival">
+            <h2>Techno & EDM Festival</h2>
+            <p class="date">Juli 2026, Düsseldorf</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid in, autem provident error odio culpa perferendis officia laudantium quam cumque! Odio in, quod perferendis qui temporibus ex vel! Veniam, nemo?</p>
+        </div>
+    </section>
+
+    <section id="lineup" class="lineup">
+        <h3>Line Up</h3>
+
+        <p class="day">Samstag 18</p>
+        <div class="stage-container">
+            <div class="stage bg-yellow">
+                <p class="name-stage">Techno</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Adam Beyer</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Carl Cox</span>
+                    </li>
+                    <li>
+                        20:00 | <span>HI-LO</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Amelie Lens</span>
+                    </li>
+                    <li>
+                        18:00 | <span>CamelPhat</span>
+                    </li>
+                    <li>
+                        17:00 | <span>ARTBAT</span>
+                    </li>
+                </ul>
+            </div> <!--.stage-->
+
+            <div class="stage bg-green">
+                <p class="name-stage">EDM</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>David Guetta</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Tïesto</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Martin Garrix</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Steve Aoki</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Afrojack</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Vintage Culture</span>
+                    </li>
+                </ul>
+            </div> <!--.stage-->
+        </div> <!--.stage-container -->
+
+
+        <p class="day">Sonntag 19</p>
+        <div class="stage-container container">
+            <div class="stage bg-green">
+                <p class="name-stage">Techno</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Reinier Zonneveld</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Eric Prydz</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Deadmau5</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Joris Voorn</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Nina Kraviz</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Argy</span>
+                    </li>
+                </ul>
+            </div> <!--.stage-->
+
+            <div class="stage bg-yellow">
+                <p class="name-stage">EDM</p>
+
+                <ul class="calendar">
+                    <li>
+                        24:00 | <span>Armin Van Buuren</span>
+                    </li>
+                    <li>
+                        22:00 | <span>Calvin Harris</span>
+                    </li>
+                    <li>
+                        20:00 | <span>Hardwell</span>
+                    </li>
+                    <li>
+                        19:00 | <span>Above & Beyond</span>
+                    </li>
+                    <li>
+                        18:00 | <span>Diplo</span>
+                    </li>
+                    <li>
+                        17:00 | <span>Steve Angello</span>
+                    </li>
+                </ul>
+            </div> <!--.stage-->
+        </div> <!--.stage-container -->
+    </section>
+
+
+    <section id="gallery" class="gallery">
+        <h3>Galerie</h3>
+        <div class="gallery-images"></div>
+    </section>
+
+    <section id="tickets" class="container-tickets">
+        <h3>Tickets kaufen</h3>
+
+        <div class="tickets">
+            <div class="ticket">
+                <p class="ticket-name">Tickets für 1 Tag</p>
+                <header class="ticket-header">
+                    <p>Enthält</p>
+                </header>
+                <div class="ticket-body">
+                    <ul>
+                        <li>Zugang zu beiden Bühnen</li>
+                        <li>Unbegrenzte Getränke</li>
+                        <li>Event-T-Shirt / Armband</li>
+                    </ul>
+                </div>
+                <footer class="ticket-footer">
+                    <p>100€</p>
+                </footer>
+            </div>
+            <div class="ticket">
+                <p class="ticket-name">Tickets für 2 Tage</p>
+                <header class="ticket-header">
+                    <p>Entählt</p>
+                </header>
+                <div class="ticket-body">
+                    <ul>
+                        <li>Zugang zu beiden Bühnen</li>
+                        <li>Unbegrenzte Getränke</li>
+                        <li>Event-T-Shirt / Armband</li>
+                        <li>VIP-Zugang</li>
+                    </ul>
+                </div>
+                <footer class="ticket-footer">
+                    <p>180€</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Techno & EDM Festival. Alle Rechte vorbehalten. 2025 &copy;</p>
+    </footer>
+
+    <script src="build/js/app.js"></script>
+
+</body>
+</html>

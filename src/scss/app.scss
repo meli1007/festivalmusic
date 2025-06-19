@@ -1,0 +1,7 @@
+//use se usa para acceder a alguna variable
+//forward no usa namespace y se usa para traer todo el contenido de una hoja de estilos que no requieran namespace
+// @use 'base/variables' as v;
+// @forward 'base/normalize';
+
+@forward 'base';
+@forward 'layout';
